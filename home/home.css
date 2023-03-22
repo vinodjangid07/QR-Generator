@@ -31,7 +31,7 @@ body{
 }
 main{
 
-    height: 93vh;
+    height: 93%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -436,9 +436,12 @@ main{
     display: flex;
 }
 
-
+footer{
+  height: 7%;
+  width: 100%;
+}
 .footerContainer{
-  height: 7vh;
+  height: 100;
   width: 100%;
   display: flex;
   align-items: center;
