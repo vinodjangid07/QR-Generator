@@ -162,16 +162,15 @@ main{
     z-index: 5;
     width: 80%;
     height: 80vh;
-    /* border-radius: 30px; */
+
     background-color: rgba(44, 44, 44, 0.521);
-    backdrop-filter: blur(10px);
-    /* display: none; */
+    backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 40px 0;
+    padding: 40px 0 40px 0;
     display: none;
 }
 /* loader */
@@ -270,9 +269,9 @@ main{
   }
   
 /*Loader*/
-.Qr-container img{
+/* .Qr-container img{
     padding-top: 50px;
-}
+} */
 .buttonContainer{
     height: fit-content;
     width: 100%;
@@ -282,117 +281,46 @@ main{
     justify-content: center;
     gap: 50px;
 }
+.downloadBtnContainer{
+  width:250px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: white; */
+  gap: 20px;
+}
+.buttonRow{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.downloadHeading{
+  color: #cfffad;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: Orbitron;
+}
+.download{
+  width: 30%;
+  height: 35px;
+  font-weight: 600;
+  background-color: transparent;
+  color:white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-family: Orbitron;
+  font-size: 1.3rem;
+}
+.download:hover{
+  background-color: #cbffa6;
+  color: black;
+}
 
-.button {
-    --width: 100px;
-    --height: 35px;
-    --tooltip-height: 35px;
-    --tooltip-width: 90px;
-    --gap-between-tooltip-to-button: 18px;
-    --button-color: #ffffff;
-    --tooltip-color: #fff;
-    width: var(--width);
-    height: var(--height);
-    background: var(--button-color);
-    position: relative;
-    text-align: center;
-    /* border-radius: 0.45em; */
-    font-family: "Arial";
-    transition: background 0.3s;
-    cursor: pointer;
-  }
-  
-  .button::before {
-    position: absolute;
-    content: attr(data-tooltip);
-    width: var(--tooltip-width);
-    height: var(--tooltip-height);
-    background-color: var(--tooltip-color);
-    font-size: 0.9rem;
-    color: #111;
-    border-radius: .25em;
-    line-height: var(--tooltip-height);
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-    left: calc(50% - var(--tooltip-width) / 2);
-  }
-  
-  .button::after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: var(--tooltip-color);
-    left: calc(50% - 10px);
-    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-  }
-  
-  .button::after,.button::before {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s;
-  }
-  
-  .text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  .button-wrapper,.text,.icon {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    color: #030303;
-    font-size: 1rem;
-    font-family: orbitron;
-    font-weight: 700;
-  }
-  
-  .text {
-    top: 0
-  }
-  
-  .text,.icon {
-    transition: top 0.5s;
-  }
-  
-  .icon {
-    color: #fff;
-    top: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .button:hover {
-    background: #6aff03;
-  }
-  
-  .button:hover .text {
-    top: -100%;
-  }
-  
-  .button:hover .icon {
-    top: 0;
-  }
-  
-  .button:hover:before,.button:hover:after {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .button:hover:after {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-  }
-  
-  .button:hover:before {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-  }
-  
 .exit{
     position: relative;
     width: 50px;
@@ -492,12 +420,17 @@ main{
     .top-logo-container img{
         width: 60%;
     }
-     
-  .button-wrapper,.text,.icon {
-    
-    font-size: 1.6rem;
-  }
-  
+    .downloadBtnContainer{
+      width: 80%;
+    }
+    .buttonRow{
+      flex-direction: column;
+    }
+    .download{
+      width: 40%;
+
+
+    }
 
 }
 
