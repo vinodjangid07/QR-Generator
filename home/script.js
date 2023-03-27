@@ -75,6 +75,7 @@ document.body.addEventListener('keypress', (e) =>{
     }
 });
 
+
 // vibration if input field is empty
 function vibratePhone() {
      if (navigator.vibrate) {
@@ -86,30 +87,21 @@ function vibratePhone() {
 
 // ====================================================================================================
 // download button
-
-jpg.addEventListener('click',()=>{
-let imgPath = QR.getAttribute('src')+`&format=jpeg`;
 let fileName = "QR CODE";
+    jpg.addEventListener('click',()=>{
+    let imgPath = QR.getAttribute('src')+`&format=jpeg`;
+    saveAs(imgPath, fileName);  
+        });
 
-
-saveAs(imgPath, fileName);
-});
-
-png.addEventListener('click',()=>{
-    let imgPath = QR.getAttribute('src')+`&format=png`;
-    let fileName = "QR CODE";
-    
-    
-    saveAs(imgPath, fileName);
+    png.addEventListener('click',()=>{
+    let imgPath2 = QR.getAttribute('src')+`&format=png`;
+    saveAs(imgPath2, fileName);
     });
     
 
     svg.addEventListener('click',()=>{
-        let imgPath = QR.getAttribute('src')+`&format=svg`;
-        let fileName = "QR CODE";
-        
-        
-        saveAs(imgPath, fileName);
+        let imgPath3 = QR.getAttribute('src')+`&format=svg`;
+        saveAs(imgPath3, fileName);
         });
         
         
