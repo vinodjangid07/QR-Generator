@@ -380,6 +380,10 @@ main{
   font-size: 1.3rem;
   font-family: Orbitron;
 }
+.footerContainer a{
+  text-decoration: none;
+  color: #6aff03;
+}
 .fa-copyright{
   font-size: 1.3rem;
   color: rgb(176, 176, 176);
